@@ -355,3 +355,27 @@ body{
       transform: translateY(0);
     }
   }
+
+  
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-purple {
+  background-color: #6a1b9a;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+.btn-purple:hover {
+  background-color: #8e24aa;
+  color: #fff;
+}
+.project-image:hover {
+  filter: brightness(0.9);
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
