@@ -25,9 +25,20 @@ body{
     padding-top: 100px;
 }
 .home-title{
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: bold;
     padding-top: 100px;
+}
+.sec-title{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: -10px;
+    padding-bottom: 5px;
+}
+.text{
+    font-size: 15px;
+    line-height: 1.5;
+    padding-bottom: 20px;
 }
 .play-btn{
     width: 50px;
@@ -63,7 +74,7 @@ body{
     content: '';
     background: #7b1798;
     height: 5px;
-    width: 200px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -155,3 +166,192 @@ body{
     border: none !important;
 }
 /*-------footer section----*/
+
+  .skill-item {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .skill-logo {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s;
+  }
+
+  .skill-text {
+    margin-top: 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-weight: bold;
+  }
+
+  /* On hover, enlarge logo and show text */
+  .skill-item:hover .skill-logo {
+    transform: scale(1.2);
+  }
+
+  .skill-item:hover .skill-text {
+    opacity: 1;
+  }
+
+  
+
+
+  .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    
+    color: white;
+  }
+  .card:hover {
+    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+  .card img {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  }
+  .card:hover img {
+    opacity: 1;
+  }
+  .btn-gradient {
+    
+    border: none;
+    color: white;
+    transition: 0.3s;
+  }
+  .btn-gradient:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(229, 46, 113, 0.5);
+  }
+
+
+
+
+  .project-card {
+    transition: all 0.4s ease;
+    transform: translateY(0);
+  }
+
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-card img {
+    transition: transform 0.5s ease;
+  }
+
+  .project-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .btn-purple {
+    background-color: #6a0dad;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-purple:hover {
+    background-color: #4b0082;
+  }
+
+  .btn-purple:hover {
+    background-color: #4b0082;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(106, 13, 173, 0.4);
+  }
+ .text-gradient {
+    background: linear-gradient(90deg, #6a0dad, #9b4dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .home {
+    background: linear-gradient(to right,#a517ba,#5f1782);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  /* --- Gradient Highlight Text --- */
+  .text-highlight {
+    background: linear-gradient(90deg, #ffe259, #ffa751);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* --- Profile Image --- */
+  .profile-pic img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #fff;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+  }
+
+  .profile-pic img:hover {
+    transform: scale(1.05);
+  }
+
+  /* --- Button --- */
+  .btn-glow {
+    background: linear-gradient(to right,#a517ba,#5f1782);
+    color: #fff;
+    border: none;
+    box-shadow: 0 5px 15px rgba(106, 0, 255, 0.4);
+    transition: all 0.3s ease;
+  }
+
+  .btn-glow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(106, 0, 255, 0.6);
+  }
+
+  /* --- Social Icons --- */
+  .social-icon img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .social-icon:hover img {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  }
+
+  /* --- Wave Image --- */
+  .wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  /* --- Subtle Animation --- */
+  .animate-fade {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
